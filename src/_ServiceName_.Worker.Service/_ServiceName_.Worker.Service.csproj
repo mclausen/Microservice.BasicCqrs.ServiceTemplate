@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>_CompanyIdentifier_._BoundedContext_._ServiceName_.Worker.Service</AssemblyName>
+    <RootNamespace>_CompanyIdentifier_._BoundedContext_._ServiceName_.Worker.Service</RootNamespace>
+    <Company>_CompanyIdentifier_</Company>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\_ServiceName_.ApplicationServices\_ServiceName_.ApplicationServices.csproj" />
+    <ProjectReference Include="..\_ServiceName_.Domain\_ServiceName_.Domain.csproj" />
+    <ProjectReference Include="..\_ServiceName_.Infrastructure\_ServiceName_.Infrastructure.csproj" />
+    <ProjectReference Include="..\_ServiceName_.Messages.External\_ServiceName_.Messages.External.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
+    <PackageReference Include="Rebus" Version="5.2.1" />
+    <PackageReference Include="Rebus.AzureServiceBus" Version="6.0.7" />
+    <PackageReference Include="Rebus.Serilog" Version="5.0.0" />
+    <PackageReference Include="Rebus.ServiceProvider" Version="4.0.2" />
+    <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.0.2" />
+  </ItemGroup>
+
+</Project>

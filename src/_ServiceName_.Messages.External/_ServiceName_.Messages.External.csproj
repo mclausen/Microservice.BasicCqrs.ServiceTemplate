@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>_CompanyIdentifier_._BoundedContext_._ServiceName_.Messages.External</AssemblyName>
+    <RootNamespace>_CompanyIdentifier_._BoundedContext_._ServiceName_.Messages.External</RootNamespace>
+    <Company>_CompanyIdentifier_</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+
+</Project>

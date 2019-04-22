@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <AssemblyName>_CompanyIdentifier_._BoundedContext_._ServiceName_.Api.Service</AssemblyName>
+    <RootNamespace>_CompanyIdentifier_._BoundedContext_._ServiceName_.Api.Service</RootNamespace>
+    <Company>_CompanyIdentifier_</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Installers\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
+    <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\_ServiceName_.ApplicationServices\_ServiceName_.ApplicationServices.csproj" />
+    <ProjectReference Include="..\_ServiceName_.Domain\_ServiceName_.Domain.csproj" />
+    <ProjectReference Include="..\_ServiceName_.Infrastructure\_ServiceName_.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

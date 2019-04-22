@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>_CompanyIdentifier_._BoundedContext_._ServiceName_.Infrastructure</AssemblyName>
+    <RootNamespace>_CompanyIdentifier_._BoundedContext_._ServiceName_.Infrastructure</RootNamespace>
+    <Company>_CompanyIdentifier_</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\_ServiceName_.Domain\_ServiceName_.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

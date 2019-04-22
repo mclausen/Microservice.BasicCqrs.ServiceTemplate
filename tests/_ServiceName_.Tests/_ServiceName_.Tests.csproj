@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <AssemblyName>UmbracoCloud._BoundedContext_._ServiceName_.Tests</AssemblyName>
+
+    <RootNamespace>UmbracoCloud._BoundedContext_._ServiceName_.Tests</RootNamespace>
+
+    <Company>Umbraco</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="Rebus" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\_ServiceName_.Api.Service\_ServiceName_.Api.Service.csproj" />
+    <ProjectReference Include="..\..\src\_ServiceName_.ApplicationServices\_ServiceName_.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\src\_ServiceName_.Domain\_ServiceName_.Domain.csproj" />
+    <ProjectReference Include="..\..\src\_ServiceName_.Infrastructure\_ServiceName_.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\_ServiceName_.Messages.External\_ServiceName_.Messages.External.csproj" />
+    <ProjectReference Include="..\..\src\_ServiceName_.Worker.Service\_ServiceName_.Worker.Service.csproj" />
+  </ItemGroup>
+
+</Project>

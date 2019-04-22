@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Martin Humlund Clausen",
+    "classifications": [ "common", "console" ],
+    "name": "UmbracoCloud.ServiceTemplate",
+    "identity": "UmbracoCloud.ServiceTemplate",
+    "shortName": "umbraservice",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "UmbracoCloud.ServiceTemplate",
+    "preferNameDirectory": true,
+    "description": "Creates a default containerized worker service running on Azure",
+    "symbols":{
+        "boundedContext": {
+            "type": "parameter",
+            "defaultValue": "BoundedContext",
+            "replaces":"_BoundedContext_",
+            "datatype":"text",
+            "isRequired": true,
+            "description": "Provide the name of the bounded context where the service will reside",
+            "FileRename": "_BoundedContext_"
+        },
+        "companyName": {
+            "type": "parameter",
+            "defaultValue": "CompanyIdentifier",
+            "replaces":"_CompanyIdentifier_",
+            "datatype":"text",
+            "isRequired": true,
+            "description": "Provide the root namespace of the service, ideally a company identifier",
+            "FileRename": "_CompanyIdentifier_"
+        },
+        "serviceName": {
+            "type": "parameter",
+            "defaultValue": "ServiceName",
+            "replaces":"_ServiceName_",
+            "datatype":"text",
+            "isRequired": true,
+            "description": "Provide the name of the service",
+            "FileRename": "_ServiceName_"
+        },
+        "createWorker": {
+            "type": "parameter",
+            "datatype" :"bool",
+            "defaultValue": "false",
+            "isRequired": false,
+            "description": "If true, creates a worker sevice"
+        },
+        "createApi": {
+            "type": "parameter",
+            "datatype" :"bool",
+            "defaultValue": "false",
+            "isRequired": false,
+            "description": "If true, creates a api sevice"
+        }
+    },
+    "sources": [
+        {
+            "include": [
+                "**/*"
+            ],
+            "exclude": [
+                "**/[Bb]in/**",
+                "**/[Oo]bj/**",
+                ".template.config/**/*",
+                "**/*.filelist",
+                "**/*.user",
+                "**/*.lock.json",
+                "**/*/.vs",
+                "**/*.vs/**/*",
+                "**/*.Service",
+                "**/*.External"
+            ]
+        }
+        
+    ]
+}
