@@ -2,7 +2,7 @@
 
 ## Badge
 
-![Build status](https://umbraco.visualstudio.com/Cloud%20vNext/_apis/build/status/Build%20_BoundedContext_)
+![Build status]()
  <-- Configure build Pipeline should be named 'Build _BoundedContext_'.
 
 ## Table of Contents
@@ -75,11 +75,7 @@ Docker documentation goes here
 The solutions is configured to use Serilog together with Application Insights
 
 ### Nuget
-Nuget.config specifies which sources are available for this repository.
-As of now we get packages from two different sources
-Umbraco internal nuget feed and Nuget.Org
 
-> Umbraco internal nuget feed requires Credentials for Azure DevOps
 
 ### Clean Architecture
 

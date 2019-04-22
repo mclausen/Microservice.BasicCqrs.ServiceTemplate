@@ -2,14 +2,14 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Martin Humlund Clausen",
     "classifications": [ "common", "console" ],
-    "name": "UmbracoCloud.ServiceTemplate",
-    "identity": "UmbracoCloud.ServiceTemplate",
-    "shortName": "umbraservice",
+    "name": "Microservice.BasicCqrs.ServiceTemplate",
+    "identity": "Microservice.BasicCqrs.ServiceTemplate",
+    "shortName": "microservice",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "sourceName": "UmbracoCloud.ServiceTemplate",
+    "sourceName": "Microservice.BasicCqrs.ServiceTemplate",
     "preferNameDirectory": true,
     "description": "Creates a default containerized worker service running on Azure",
     "symbols":{

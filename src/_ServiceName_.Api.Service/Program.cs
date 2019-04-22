@@ -17,7 +17,7 @@ namespace _CompanyIdentifier_._BoundedContext_._ServiceName_.Api.Service
                 .MinimumLevel.Information()
                 .Enrich.FromLogContext()
                 .Enrich.WithEnvironmentDetails(serviceName: Infrastructure.Constants.Service.ServiceName, environmentName: _CompanyIdentifier_Environment.EnvironmentName)
-                .WriteTo.ApplicationInsights(instrumentationKey: UmbracoEnvironment.AiInstrumentationKey, telemetryConverter: TelemetryConverter.Traces)
+                .WriteTo.ApplicationInsights(instrumentationKey: _CompanyIdentifier_Environment.AiInstrumentationKey, telemetryConverter: TelemetryConverter.Traces)
                 .CreateLogger();
 
             CreateWebHostBuilder(args)

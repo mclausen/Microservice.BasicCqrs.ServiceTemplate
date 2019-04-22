@@ -5,9 +5,8 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyName>UmbracoCloud._BoundedContext_._ServiceName_.Integration.Tests</AssemblyName>
-
-    <RootNamespace>UmbracoCloud._BoundedContext_._ServiceName_.Integration.Tests</RootNamespace>
+    <AssemblyName>_CompanyIdentifier_._BoundedContext_._ServiceName_.Integration.Tests</AssemblyName>
+    <RootNamespace>_CompanyIdentifier_._BoundedContext_._ServiceName_.Integration.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

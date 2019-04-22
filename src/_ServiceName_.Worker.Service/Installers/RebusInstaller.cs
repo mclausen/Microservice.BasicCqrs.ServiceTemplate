@@ -15,7 +15,7 @@ namespace _CompanyIdentifier_._BoundedContext_._ServiceName_.Worker.Service.Inst
             services.AddRebus(configure => configure
                 .Logging(l => l.ColoredConsole())
                 .Transport(t => t.UseAzureServiceBus(
-                    connectionStringNameOrConnectionString: UmbracoEnvironment.ServiceBusConnectionString,
+                    connectionStringNameOrConnectionString: _CompanyIdentifier_Environment.ServiceBusConnectionString,
                     inputQueueAddress: Constants.ServiceBus.InputQueue))
                 .Options(o => o.SimpleRetryStrategy(errorQueueAddress: Constants.ServiceBus.ErrorQueue, maxDeliveryAttempts: 5))
             );

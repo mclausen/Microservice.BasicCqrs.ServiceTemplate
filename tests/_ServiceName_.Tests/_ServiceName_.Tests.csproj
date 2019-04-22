@@ -5,11 +5,11 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyName>UmbracoCloud._BoundedContext_._ServiceName_.Tests</AssemblyName>
+    <AssemblyName>_CompanyIdentifier_._BoundedContext_._ServiceName_.Tests</AssemblyName>
 
-    <RootNamespace>UmbracoCloud._BoundedContext_._ServiceName_.Tests</RootNamespace>
+    <RootNamespace>_CompanyIdentifier_._BoundedContext_._ServiceName_.Tests</RootNamespace>
 
-    <Company>Umbraco</Company>
+    <Company>_CompanyIdentifier_</Company>
   </PropertyGroup>
 
   <ItemGroup>

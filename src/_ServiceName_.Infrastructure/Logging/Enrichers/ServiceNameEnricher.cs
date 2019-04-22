@@ -2,7 +2,7 @@
 using Serilog.Core;
 using Serilog.Events;
 
-namespace UmbracoCloud._BoundedContext_._ServiceName_.Infrastructure.Logging.Enrichers
+namespace _CompanyIdentifier_._BoundedContext_._ServiceName_.Infrastructure.Logging.Enrichers
 {
     public class ServiceNameEnricher : ILogEventEnricher
     {

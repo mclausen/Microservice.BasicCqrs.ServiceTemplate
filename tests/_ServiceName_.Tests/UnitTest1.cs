@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace UmbracoCloud._BoundedContext_._ServiceName_.Tests
+namespace _CompanyIdentifier_._BoundedContext_._ServiceName_.Tests
 {
     public class Tests
     {

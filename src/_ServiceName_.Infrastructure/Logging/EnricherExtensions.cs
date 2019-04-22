@@ -1,9 +1,9 @@
 ﻿using System;
 using Serilog;
 using Serilog.Configuration;
-using UmbracoCloud._BoundedContext_._ServiceName_.Infrastructure.Logging.Enrichers;
+using _CompanyIdentifier_._BoundedContext_._ServiceName_.Infrastructure.Logging.Enrichers;
 
-namespace UmbracoCloud._BoundedContext_._ServiceName_.Infrastructure.Logging
+namespace _CompanyIdentifier_._BoundedContext_._ServiceName_.Infrastructure.Logging
 {
     public static class EnricherExtensions
     {

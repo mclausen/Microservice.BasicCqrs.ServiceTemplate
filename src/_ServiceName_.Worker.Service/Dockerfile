@@ -18,7 +18,7 @@ ENV RunningDocker=true
 ENV ServiceBusConnectionString=MissingServiceBusConnectionString
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "UmbracoCloud._BoundedContext_._ServiceName_.Worker.Service.dll"]
+ENTRYPOINT ["dotnet", "_CompanyIdentifier_._BoundedContext_._ServiceName_.Worker.Service.dll"]
 
 # Copy csproj and restore distinct layers
 
